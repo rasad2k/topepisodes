@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
     title, episode_count, episode, season = option_handling(sys.argv)
     if title == "":
-        print("Usage: top_episodes [-t TITLE]\n")
+        print("Usage: top_episodes [-t|--title TITLE]\n")
         print("Use -h|--help to get more help!")
         exit(1)
     episodes = get_episodes(title, season, episode)
